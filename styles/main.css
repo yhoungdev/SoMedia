@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+ :root {
+     --primary:#781F9D;
+     --yellow:#F2B71D;
+     --text:#8E8E8E;
+ }
+ .class {
+     text-transform: uppercase;
+     color: var(--text);
+     font-family: 'Josefin Sans', sans-serif;
+     font-weight: 100 !important;
+
+ }
+
+/* header styles */
+header {
+    
+}
+header .top {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 9em;
+
+}
+
+header ul {
+    list-style-type: none;
+}
+ header ul li {
+    display: inline;
+    margin-left: 5em;
+}
+
+header .nav span {
+    display: none;
+}
+/* header end */
+.grow {
+    color:var(--yellow);
+    font-weight: bold;
+}
+
+  /* title */
+ 
+
+/* content heading */
+ .heading {
+    padding-top: 2em;
+    padding-left: 9em;
+ }
+
+    .heading .contents {
+        display: flex;
+
+    }
+
+    .heading .contents .cont {
+        padding-top: 10em;
+        width: 30%;
+    }
+
+    .heading .contents .cont span h4 { 
+        color:var(--primary) ;
+        margin-bottom: 4px;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 30px;
+       
+    }
+    
+    .empty {
+  
+        padding: 0 15em;
+        background-color: var(--yellow);
+        font-size: 5px;
+        border-radius: 9px;
+
+       
+    }
+
+    .heading .contents .cont .text {
+       font-size: 20px;
+  
+       margin-top: 1em;
+       line-height: 2;
+       color: var(--text);
+       font-weight: 100 !important;
+       font-family: 'Josefin Sans', sans-serif;
+    }
+    .sideImage {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+    .sideImage img {
+        width: 50em;
+        
+    }
+
+    .btn {
+        border: none;
+        color: white;
+        padding: 1em 1.5em ;
+        background-color: var(--primary);
+        border-radius: 10px;
+        margin-top: 1em;
+        cursor: pointer;
+        margin-bottom: 1em;
+        outline: none;
+    }
+    .fa {
+        cursor: pointer;
+       
+    }
+  
+/* for mobile screen */
+
+@media screen and (min-width:200px) and (max-width:680px) {
+
+   /* top section  */
+   header .top {
+    display: flex;
+    justify-content: space-between;
+    padding:1.5em 2em;
+   
+    }
+    header ul {
+        display: none;
+    }
+    header .nav span {
+        display: inline-block;
+    }
+    
+    .sideImage {
+        display: none;
+    }
+    .heading .contents .cont  {
+        width: 100%;
+    } 
+    .heading {
+       
+       padding: 4em;
+     }
+     .heading .contents .cont .text {
+         text-align: center;
+     }
+    .flex {
+        display: flex;
+        justify-content: center;
+    }
+    .class {
+        text-align: center;
+    }
+}
