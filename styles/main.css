@@ -97,7 +97,7 @@ header .nav span {
         bottom: 0;
     }
     .sideImage img {
-        width: 50em;
+        width: 40em;
         
     }
 
@@ -154,5 +154,33 @@ header .nav span {
     }
     .class {
         text-align: center;
+    }
+
+    .sidebar  {
+        list-style-type: none;
+        position: absolute;
+         background-color:#771f9dbd;
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        height: 100vh;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        
+
+    }
+    .sidebar ul {
+        list-style-type: none;
+
+    }
+    .sidebar ul li {
+        margin-bottom: 3em;
+        cursor: pointer;
+    }
+    #side {
+        color: white;
     }
 }
